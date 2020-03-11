@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+import Banks_list from "./components/banks_list/bank_list";
+import BestRates from "./components/best_rate/best_rates";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Banks_list />, document.querySelector('.main-content-div'));
+ReactDOM.render(<BestRates />, document.querySelector('#best-rates-block'));
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
+
 serviceWorker.unregister();

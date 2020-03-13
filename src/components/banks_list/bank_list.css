@@ -1,0 +1,102 @@
+.container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bank-block{
+    margin-top: 33px;
+    width: 300px;
+}
+
+.bank-block:not(:last-child){
+    border-right: 1px solid grey;
+}
+
+@media (min-width: 1897px) {
+    .bank-block:nth-child(5n){
+        border: 0;
+    }
+}
+
+@media(min-width: 1521px) and (max-width: 1896px){
+    .bank-block:nth-child(4n){
+        border: 0;
+    }
+}
+
+@media(max-width:1520px) and (min-width: 1146px){
+    .bank-block:nth-child(3n){
+        border: 0;
+    }
+}
+
+@media(max-width:1145px) and (min-width: 769px){
+    .bank-block:nth-child(2n){
+        border: 0;
+    }
+}
+
+@media(max-width: 768px){
+    .bank-block:nth-child(1n){
+        border: 0;
+    }
+}
+
+.bank-block h2{
+    font-family: cursive;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.showRatesButton-block{
+    display: flex;
+    justify-content: center;
+}
+
+button, input{
+    outline: none !important;
+}
+
+.rates-btn{
+    border: 0;
+    border-radius: 7px;
+    color: white;
+    background-color: rgb(51, 153, 255);
+    font-size: 20px;
+    margin: 15px 0;
+    padding: 5px;
+    text-align: center;
+}
+
+.address-block{
+    display: flex;
+    justify-content: center;
+}
+
+.rates-btn:hover{
+    cursor: pointer;
+    transform: scale(1.07);
+    box-shadow: 0 0 30px rgba(51, 153, 255, 0.5);
+}
+
+.bank-block a{
+    text-decoration: none;
+    font-family: Verdana;
+    font-size: 13px;
+    text-align: center;
+}
+
+.address-word{
+    color: red;
+}
+
+.address-location{
+    color: rgb(51, 153, 255);
+}
+
+
+th, td{
+    text-align: center;
+    padding: 0 15px;
+}
